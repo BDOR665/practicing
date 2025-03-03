@@ -1,2 +1,3 @@
 rootProject.name = 'practicing'
+include '01_java_basic1'
 
