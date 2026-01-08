@@ -12,7 +12,6 @@ public class FindCharacter4_1 {
         char t = sc.next().charAt(0);
 
         System.out.println(T.solution(str, t));
-
     }
 
     public int solution(String str, char t) {

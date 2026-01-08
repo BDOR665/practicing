@@ -12,7 +12,6 @@ public class FindWordInSentence6_3 {
 
         System.out.println(T.solution(str));
 
-
     }
 
     public String solution(String str) {

@@ -31,6 +31,7 @@ public class ConvertCase5_2 {
 //                answer += (char)(c-32);
 //            }
 
+
             if(Character.isLowerCase(c)){
                 sb.append(Character.toUpperCase(c));
             } else {
