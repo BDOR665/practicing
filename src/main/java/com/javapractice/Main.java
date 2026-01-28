@@ -1,18 +1,32 @@
 package com.javapractice;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String[] args) {
-        int num1, num2;
+    public static void main(String[] args) throws IOException {
+        Main T = new Main();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("첫 번째 숫자를 입력해주세요 : ");
-        num1 = sc.nextInt();
+        int n = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
+        int[][] nN = new int[m][n];
 
-        System.out.println("두 번째 숫자를 입력해주세요 : ");
-        num2 = sc.nextInt();
+        for (int i = 0; i<m; i++){
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0; j<n; j++) {
+                nN[i][j] = Integer.parseInt(st.nextToken());
+            }
+        }
 
-        System.out.println("입력받은 두 숫자 중에 더 큰 숫자는 : " + Math.max(num1,num2) + "입니다.");
+        System.out.print(T.solution(n,m,nN));
+    }
+    public int solution(int n, int m, int[][] nN) {
+        int answer = 0;
+
+        return answer;
     }
 }
