@@ -16,8 +16,8 @@ public class BinaryTreeTraversal62_5 {
             // 중위순회
             System.out.print(root.data+" ");
             DFS(root.rt);
-            // 후외순회
-            System.out.println(root.data+" ");
+            // 후위순회
+            System.out.print(root.data+" ");
         }
 
     }
